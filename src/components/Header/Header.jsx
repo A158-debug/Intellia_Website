@@ -79,13 +79,19 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex text-white justify-end relative mt-20 p-10">
-        <div className="basis-1/2 flex flex-col">
+      <div className="flex text-white justify-end relative mt-20 p-10" >
+        <div className="basis-1/2 flex flex-col pr-10 home_wallpaper">
           <div className="">
-            <p className="text-9xl font-semibold p-2">T</p>
-            <p className="text-9xl font-semibold p-2">E</p>
-            <p className="text-9xl font-semibold p-2">A</p>
-            <p className="text-9xl font-semibold p-2">M</p>
+            <p className="text-9xl font-semibold p-2  mr-6 float-right">T</p>
+          </div>
+          <div className="">
+            <p className="text-9xl font-semibold p-2  mr-7 float-right">E</p>
+          </div>
+          <div className="">
+            <p className="text-9xl font-semibold p-2  mr-4 float-right">A</p>
+          </div>
+          <div className="">
+            <p className="text-9xl font-semibold p-2 float-right">M</p>
           </div>
         </div>
         <div className="basis-1/2 p-5 text-white ">
@@ -109,6 +115,35 @@ const Header = () => {
           <div className="mt-10">
             <CountDown deadline="March, 17, 2023" />
           </div>
+        </div>
+      </div>
+      {/* <div className="mt-10 text-9xl text-white font-semibold" style={{fontFamily: 'Raleway'}}>
+         <div className="flex"><p>HOW</p></div>
+         <div className="flex relative">
+          <p className="absolute left-20 ">THIS</p>  
+         </div>
+         <div className="flex p-10 relative">
+          <p className="absolute left-40 top-28">WORKS</p>  
+         </div>
+      </div> */}
+      <div className="flex text-white h-screen">
+        <div className="basis-6/12 p-5 flex justify-center content-center">
+         <p className="text-7xl font-bold flex self-center pl-10" style={{lineHeight:'80px'}}>Lorem ipsum dolor sit amet, consec adipisicing elit </p>
+        </div>
+        <div className="basis-6/12 flex flex-col content-around justify-center">
+          <div className="flex justify-center content-center my-10 ml-16">
+             <div className="text-5xl p-2"><BsEmojiSmile /></div>
+             <div className="flex self-center"><p className="footer_license_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium. </p></div>
+          </div>
+          <div className="flex justify-center content-center my-10 ml-24 ">
+             <div className="text-5xl p-2"><BsEmojiSmile /></div>
+             <div className="flex self-center"><p className="footer_license_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium. </p></div>
+          </div>
+          <div className="flex justify-center content-center my-10 ml-16">
+             <div className="text-5xl p-2"><BsEmojiSmile /></div>
+             <div className="flex self-center"><p className="footer_license_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium. </p></div>
+          </div>
+         
         </div>
       </div>
     </div>
