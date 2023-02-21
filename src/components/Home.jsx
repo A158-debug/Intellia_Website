@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
-
-
-import Departments from "../components/Departments/Departments";
+import DepartmentTeams from "../components/Departments/Department_Teams";
 import Contact from "./Contact/Contact";
 import Schedule from "./Schedule/Schedule";
 import Sponsors from "./Sponsors/Sponsors";
@@ -12,7 +10,6 @@ const Home = () => {
   return (
     <div>
       <Header />
-     
       <div
         className="container_header text-white text-center py-10"
         style={{ backgroundColor: "rgb(20,43,46)" }}
@@ -34,7 +31,7 @@ const Home = () => {
         </p>
       </div>
       <Events/>
-      <Departments />
+      <DepartmentTeams/>
       <Schedule/>
       <Sponsors/>
       <Contact/>

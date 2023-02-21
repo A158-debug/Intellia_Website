@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer,Navbar, About,Speakers,Events ,Team, Home,Contact} from './components'
+import { Footer,Navbar, About,Speakers,Events ,Team, Home,Contact,BDS} from './components'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/bds" element={<BDS />} />
               <Route path="/speakers" element={<Speakers />} />
               <Route path="/events" element={<Events />} />
               <Route path="/contact" element={<Contact />} />

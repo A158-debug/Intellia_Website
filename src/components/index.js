@@ -6,5 +6,6 @@ import About from "./About/About";
 import Home from './Home'
 import Events from "./Events/Events"
 import Contact from "./Contact/Contact"
+import BDS from './BDS/BDS'
 
-export {Navbar,Footer,Speakers,Team,About,Home,Events, Contact}
+export {Navbar,Footer,Speakers,Team,About,Home,Events, Contact,BDS}

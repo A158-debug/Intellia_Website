@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import {Link} from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
         </div>
 
         <ul className="app__navbar-links list-none flex justify-center content-center">
-          {["Home", "About","Events", "Speakers", "Sponsors","Team", "Contact Us"].map((item) => (
+          {["Home", "About","BDS","Events", "Speakers", "Sponsors","Team", "Contact Us"].map((item) => (
             <li
               className="app__flex p-text flex flex-col cursor-pointer mx-4"
               key={`link-${item}`}
