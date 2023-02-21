@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import {Link} from 'react-router-dom'
-import './Navbar.css'
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,17 +16,35 @@ const Navbar = () => {
         </div>
 
         <ul className="app__navbar-links list-none flex justify-center content-center">
-          {["Home", "About","BDS","Events", "Speakers", "Sponsors","Team", "Contact Us"].map((item) => (
+          {[
+            "Home",
+            "About",
+            "BDS",
+            "Events",
+            "Speakers",
+            "Sponsors",
+            "Team",
+            "",
+          ].map((item) => (
             <li
               className="app__flex p-text flex flex-col cursor-pointer mx-4"
               key={`link-${item}`}
             >
               <div />
-              <a href={`#${item}`} className="" style={{ color: "white" }}>
+              <Link to={`./${item}`} className="" style={{ color: "white" }}>
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
+          <li
+            className="app__flex p-text flex flex-col cursor-pointer mx-4"
+            key={`link-contact`}
+          >
+            <div />
+            <Link to="/#Contact" className="" style={{ color: "white" }}>
+              Contact Us
+            </Link>
+          </li>
         </ul>
         <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -49,7 +67,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-
     </>
   );
 };
