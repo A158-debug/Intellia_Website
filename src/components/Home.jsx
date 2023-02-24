@@ -31,7 +31,7 @@ const Home = () => {
         </p>
       </div>
       <Events/>
-      <DepartmentTeams/>
+      {/* <DepartmentTeams/> */}
       <Schedule/>
       <Sponsors/>
       <Contact/>

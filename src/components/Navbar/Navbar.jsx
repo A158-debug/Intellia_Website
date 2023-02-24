@@ -16,13 +16,7 @@ const Navbar = () => {
         </div>
 
         <ul className="app__navbar-links list-none flex justify-center content-center">
-          {[
-            "Home",
-            "About",
-            "BDS",
-            "Events",
-            "Team",
-          ].map((item) => (
+          {["Home","About","BDS","Events","Team"].map((item) => (
             <li
               className="app__flex p-text flex flex-col cursor-pointer mx-4"
               key={`link-${item}`}

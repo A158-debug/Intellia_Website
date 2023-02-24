@@ -12,7 +12,7 @@ const Header = () => {
         <source src={video1} type="video/mp4" />
       </video>
       <div className="flex flex-row h-screen ">
-        <div className="basis-7/12 flex justify-center content-center">
+        <div className=" basis-full md:basis-7/12 flex justify-center content-center">
           <div className="content text-white self-center text-center">
             <p className="text-3xl department_heading">
               BOARD OF DEPARTMENTAL SOCIETIES
@@ -33,12 +33,12 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <div className="basis-5/12 flex p-10">
+        <div className="basis-0 md:basis-5/12 flex p-10">
           <img src={bg2} alt="" className="self-end" />
         </div>
       </div>
-      <div className="flex justify-center content-center flex-wrap text-white p-5">
-        <div className="w-72 h-48 flex ">
+      <div className="flex justify-center content-center flex-wrap text-white p-5 gap-4" style={{background: 'radial-gradient(circle, rgba(62,192,182,1) 0%, rgba(15,91,86,1) 100%)'}}>
+        <div className=" flex ">
           <div className="text-5xl p-2 pt-5">
             <BsEmojiSmile />
           </div>
@@ -48,7 +48,7 @@ const Header = () => {
             <p className="footer_license_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div className="w-72 h-40 flex ">
+        <div className=" flex ">
           <div className="text-5xl p-2 pt-5">
             <BsEmojiSmile />
           </div>
@@ -58,7 +58,7 @@ const Header = () => {
             <p className="footer_license_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div className="w-72 h-40 flex ">
+        <div className="flex ">
           <div className="text-5xl p-2 pt-5">
             <BsEmojiSmile />
           </div>
@@ -68,7 +68,7 @@ const Header = () => {
             <p className="footer_license_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div className="w-72 h-40 flex ">
+        <div className="flex ">
           <div className="text-5xl p-2 pt-5">
             <BsEmojiSmile />
           </div>
@@ -126,7 +126,7 @@ const Header = () => {
           <p className="absolute left-40 top-28">WORKS</p>  
          </div>
       </div> */}
-      <div className="flex text-white h-screen">
+      <div className="flex flex-col md:flex-basis text-white h-screen">
         <div className="basis-6/12 p-5 flex justify-center content-center">
          <p className="text-7xl font-bold flex self-center pl-10" style={{lineHeight:'80px'}}>Lorem ipsum dolor sit amet, consec adipisicing elit </p>
         </div>
