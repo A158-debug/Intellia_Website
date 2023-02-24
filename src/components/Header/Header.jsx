@@ -97,7 +97,7 @@ const Header = () => {
         <div className="basis-1/2 p-5 text-white ">
           <p className="intellia_heading_about text-center">Intellia</p>
           <p className="text-center footer_license_text">
-            {" "}
+  
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             incidunt sit veritatis doloremque rerum porro in. Dolores blanditiis
             natus quasi eligendi reiciendis voluptatum assumenda, accusantium

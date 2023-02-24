@@ -21,10 +21,7 @@ const Navbar = () => {
             "About",
             "BDS",
             "Events",
-            "Speakers",
-            "Sponsors",
             "Team",
-            "",
           ].map((item) => (
             <li
               className="app__flex p-text flex flex-col cursor-pointer mx-4"

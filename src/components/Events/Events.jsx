@@ -1,5 +1,5 @@
-import React,{useRef} from 'react'
-import './Events.css';
+import React, { useRef } from "react";
+import "./Events.css";
 import {
   motion,
   useScroll,
@@ -7,14 +7,10 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
-  useAnimationFrame
+  useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-
-// interface ParallaxProps {
-//   children: string;
-//   baseVelocity: number;
-// }
+import events from "../../img/events.jfif";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -22,10 +18,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
-    stiffness: 400
+    stiffness: 400,
   });
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-    clamp: false
+    clamp: false,
   });
 
   /**
@@ -73,19 +69,45 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   );
 }
 
+const department_logos = [
+  { id: 1, photo: events, name: "Engineering Science" },
+  { id: 2, photo: events, name: "Engineering Science" },
+  { id: 3, photo: events, name: "Engineering Science" },
+];
 
 const Events = () => {
   return (
     <div>
-      <p className='text-7xl font-semibold text-white text-center mt-10'>OUR EVENTS</p>
-      <div className='flex'>
-        <div className='scrolling_text  max-w-full text-white'>
-        <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
+      <p className="text-7xl font-semibold text-white text-center mt-10">
+        OUR EVENTS
+      </p>
+      <div className="">
+        {/* <div className="scrolling_text  max-w-full text-white">
+          <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
         <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
-        </div>
+         
+        </div> */}
+         <div class="flex flex-row flex-wrap mt-10 justify-center content-center">
+            {department_logos.map((e) => (
+              <div className="bg-white text-teal-700 w-60 m-2 ">
+                <div className="">
+                  <img
+                    src={e.photo}
+                    alt=""
+                    srcset=""
+                    className="object-cover w-96 h-56"
+                  />
+                </div>
+                <div className="p-2">
+                  <p className="text-2xl text-center">Team Name</p>
+                  <p className="text-xl text-center">Department Name</p>
+                </div>
+              </div>
+            ))}
+          </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;

@@ -34,8 +34,9 @@
     width: 100%;
     object-fit: fill;
 }
-/* .home_wallpaper{
-    background-image: url("../../img/home1.jpg");
+.home_wallpaper{
+    background-image: url("../../img/events.jfif");
     background-size: cover;
+    filter: grayscale(100%);
 
-} */
+}
