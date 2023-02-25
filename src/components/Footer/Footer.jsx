@@ -56,7 +56,3 @@ const Footer = () => {
 
 export default Footer;
 
-// eslint-disable-next-line no-lone-blocks
-{
-  /* <button onClick={scrollToTop} className="back-to-top" style={{display: visible ? 'inline' : 'none'}}><i className="bi bi-arrow-up-short"></i></button> */
-}

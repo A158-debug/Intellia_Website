@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div className="contact_section_bg py-10">
       <div className="flex flex-col w-10/12 text-white mx-auto my-10 p-5 contact_section">
-        <div className="flex justify-center content-center contact_icons">
-          <div className="basis-1/3 flex content-center ">
+        <div className="flex justify-around content-center flex-wrap contact_icons ">
+          <div className="flex">
             <div className="icons mx-3">
               <HiLocationMarker />
             </div>
@@ -17,7 +17,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="basis-1/3 flex justify-center content-center">
+          <div className="flex my-10 md:my-0 ">
             <div className="icons mx-3">
               <HiLocationMarker />
             </div>
@@ -28,7 +28,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="basis-1/3 flex justify-end content-center">
+          <div className="flex">
             <div className="icons mx-3">
               <HiLocationMarker />
             </div>
