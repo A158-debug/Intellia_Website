@@ -4,8 +4,9 @@
 
 .intellia_heading{
     font-family: 'Kaushan Script', cursive;
-    font-size: 160px;
 }
+
+
 .intellia_heading_about{
     font-family: 'Kaushan Script', cursive;
     font-size: 100px;
@@ -19,7 +20,7 @@
     content:"About";
     color: white;
     position:absolute;
-    top: -120px;
+    top: -80px;
     right: 150px;
     font-size: 200px;
     opacity: 0.1;
@@ -34,8 +35,10 @@
     width: 100%;
     object-fit: fill;
 }
-/* .home_wallpaper{
-    background-image: url("../../img/events.jfif");
-    background-size: cover;
-    filter: grayscale(100%);
-} */
+.home_wallpaper{
+    background-image: url("../../img/home03.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* filter: grayscale(100%); */
+}
