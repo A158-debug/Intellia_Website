@@ -1,10 +1,18 @@
 import React from "react";
 import Photos from "../../img/Team_Photos/HimeshDhaka.jpg";
+import Cup from "../../img/Trophy.jpg";
 import "./BDS.css";
 
 const BDS = () => {
   return (
     <div className="text-white">
+      <div className="relative">
+        <img src={Cup} alt="About Us" className="w-full h-96 object-cover" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+          <h1 className="text-5xl font-bold mb-5">About Us</h1>
+          <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem assumenda error illo in esse consequatur quas, accusantium deleniti, adipisci minus ipsam voluptate sit sed est. Placeat eos ducimus nostrum!</p>
+        </div>
+      </div>
       {/* <p className='text-7xl font-semibold text-center'>MEET OUR TEAM</p> */}
       <div className="pt-20 p-10">
         <p className="text-6xl font-semibold uppercase bds_heading_about py-10">
@@ -23,10 +31,10 @@ const BDS = () => {
             assumenda quam consectetur inventore sapiente, tempore soluta!{" "}
           </p>
           <div className="">
-          <p className="total_bds_department">15</p>
-          <p className="total_bds_department_name uppercase">Department</p>
+            <p className="total_bds_department">15</p>
+            <p className="total_bds_department_name uppercase">Department</p>
           </div>
-         
+
         </div>
       </div>
       {/* <p className='text-2xl text-center p-3 mb-10 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nulla perferendis delectus eius dignissimos et nihil a, esse molestiae placeat?</p> */}
