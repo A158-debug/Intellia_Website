@@ -153,7 +153,7 @@ const About = () => {
             > 
             <div className="flex overflow-hidden">
               <img src={card.secretary_photo} alt="" srcset="" className="object-cover w-1/2 h-64" />
-              <img src={card.department_photo} alt="" srcset="" className="object-cover w-1/2 h-62"/>
+              <img src={card.department_photo} alt="" srcset="" className="object-scale-down bg-black w-1/2 h-64"/>
             </div>
             <div className="px-6 py-4 flex self-center  content-center justify-center">
             <p className="font-semibold text-xl text-center text-cyan-800">{card.department_name}</p>

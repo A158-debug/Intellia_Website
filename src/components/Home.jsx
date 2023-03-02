@@ -183,7 +183,6 @@ const Home = () => {
       <Events />
       {/* <DepartmentTeams/> */}
       <Schedule />
-      <Sponsors />
       <Contact />
     </div>
   );
