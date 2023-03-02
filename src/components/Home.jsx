@@ -33,7 +33,7 @@ const Home = () => {
       <Events/>
       {/* <DepartmentTeams/> */}
       <Schedule/>
-      <Sponsors/>
+      {/* <Sponsors/> */}
       <Contact/>
     </div>
   );
