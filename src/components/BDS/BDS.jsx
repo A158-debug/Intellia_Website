@@ -10,8 +10,10 @@ const BDS = () => {
         <img src={Cup} alt="About Us" className="w-full h-96 object-cover" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           <h1 className="text-5xl font-bold mb-5">About Us</h1>
-          <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem assumenda error illo in esse consequatur quas, accusantium deleniti, adipisci minus ipsam voluptate sit sed est. Placeat eos ducimus nostrum!</p>
+        <div className="backdrop-filter backdrop-blur-lg bg-white bg-opacity-10 p-10 rounded-lg">
+          <p className="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores qui pariatur dignissimos quod excepturi ad, architecto necessitatibus temporibus dolores quasi. Sapiente soluta cum totam? Distinctio accusantium saepe quaerat voluptas velit!</p>
         </div>
+      </div>
       </div>
       {/* <p className='text-7xl font-semibold text-center'>MEET OUR TEAM</p> */}
       <div className="pt-20 p-10">
