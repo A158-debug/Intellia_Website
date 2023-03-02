@@ -1,55 +1,116 @@
-import React from "react";
-import "./Events.css";
-import events from "../../img/bg7.jpg";
-import { FiExternalLink } from "react-icons/fi";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import bg7 from '../../img/bg7.jpg';
 
-const department_logos = [
-  { id: 1, photo: events, name: "Tech" },
-  { id: 2, photo: events, name: "Cult" },
-  { id: 3, photo: events, name: "Sports" },
+const total_events = [
+  [
+    { 
+      id:1,
+      name: "Tech Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7,
+      register_link:"./"
+    },
+    { 
+      id:2,
+      name: "Tech Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+    { 
+      id:3,
+      name: "Tech Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+   
+  ],
+  [
+    { 
+      id:1,
+      name: "Sports Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+    { 
+      id:2,
+      name: "Sports Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+    { 
+      id:3,
+      name: "SportsEvent Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+   
+  ],
+  [
+    { 
+      id:1,
+      name: "Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+    { 
+      id:2,
+      name: "Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+    { 
+      id:3,
+      name: "Event Name",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.",
+      img:bg7
+    },
+   
+  ],
 ];
 
 const Events = () => {
-  return (
-    <div className="py-10">
-      <p className="text-7xl font-semibold text-white text-center">
-        OUR EVENTS
-      </p>
+  const [activeTab, setActiveTab] = useState(0);
 
-      <div class="flex flex-row flex-wrap mt-10 justify-center content-center p-3 md:p-0">
-        {department_logos.map((e) => (
-          <div className="bg-white text-teal-700 m-2 app__work-item ">
-            <div className="relative ">
-              <img src={e.photo} alt="" className="object-cover w-96 h-56" />
-              <motion.div
-                className="app__work-hover flex justify-center items-center"
-                whileHover={{ opacity: [0, 1] }}
-                transition={{
-                  duration: 0.25,
-                  ease: "easeInOut",
-                  staggerChildren: 0.5,
-                }}
-              >
-                <a href="./" target="_blank" rel="noreferrer" className="">
-                  <motion.div
-                    className=" text-3xl flex  text-white"
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                  >
-                    <FiExternalLink  />
-                  </motion.div>
-                </a>
-              </motion.div>
-            </div>
-            <div className="p-2">
-              <p className="text-2xl text-center">{e.name} </p>
-            </div>
-          </div>
-        ))}
+  const tabs = [
+    { id: 0, title: "Tech Events" },
+    { id: 1, title: "Sprts Event" },
+    { id: 2, title: "Cult Events" },
+  ];
+
+  return (
+    <>
+      <div className="pt-10">
+        <p className="text-4xl md:text-7xl font-semibold text-white text-center">
+          OUR EVENTS
+        </p>
+        <div className="flex justify-center mb-4 mt-10 md:mt-20">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`w-36 py-2 px-4 mx-3 md:mx-8 rounded-lg text-white hover:bg-teal-700 ${
+                activeTab === tab.id ? "bg-teal-800" : "bg-regal-blue"
+              }`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              <p className="text-lg font-semibold">{tab.title}</p>
+            </button>
+          ))}
+        </div>
+        <div className="p-4 flex flex-col items-center ">
+            {total_events[activeTab].map((item) => (
+              <div className="flex text-white p-5 mt-10 w-4/5 border" key={item.id}>
+                  <div className="basis-1/2">
+                    <p className="intellia_heading_about text-6xl">{item.name}</p>
+                    <p className="py-3 px-2 footer_license_text text-lg">{item.description}</p>
+                  </div>
+                  <div className="basis-1/2">
+                    <img src={item.img} alt="" className="object-cover h-48 w-96" />
+                  </div>
+              </div>
+            ))}
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

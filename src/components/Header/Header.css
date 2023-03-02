@@ -8,15 +8,13 @@
 
 
 .intellia_heading_about{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 100px;
-    
+    font-family: 'Kaushan Script', cursive;   
 }
 .department_heading{
     font-family: 'Roboto', sans-serif;
 
 }
-.intellia_heading_about::before{
+/* .intellia_heading_about::before{
     content:"About";
     color: white;
     position:absolute;
@@ -25,7 +23,7 @@
     font-size: 200px;
     opacity: 0.1;
     border-radius: 2px;
-}
+} */
 .back__video{
     position: absolute;
     right: 0;

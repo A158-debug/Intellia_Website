@@ -30,7 +30,7 @@ body {
   font-family: "Montserrat";
 }
 .home_war_background {
-  background-image: url("./img/home2.jfif");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%),url("./img/home2.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,9 +68,10 @@ body {
 }
 
 .home_background_image{
-  background-image: url('./img/home04.jpg');
+  background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('./img/home05.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +79,11 @@ body {
     font-size: 24px;
     min-width: 196px;
   }
+  .parallax .scroller {
+    font-size: 100px;
+  
+  }
+  
 }
 
 .parallax {
@@ -94,16 +100,32 @@ body {
 .parallax .scroller {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 150px;
   display: flex;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .parallax span {
   display: block;
   margin-right: 30px;
+}
+
+.overlay_background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-radius: 0.5rem; */
+  /* opacity: 0; */
+  transition: all 0.3s ease;
+}
+.overlay_background *{
+  color: white
 }
 
