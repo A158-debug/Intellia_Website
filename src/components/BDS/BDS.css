@@ -2,14 +2,14 @@
 
 .total_bds_department{
     font-family: 'Oswald', sans-serif;
-    font-size: 220px;
+    /* font-size: 220px; */
     line-height: 180px;
 }
 .total_bds_department_name{
     font-family: 'Oswald', sans-serif;
-    font-size: 80px;
+    /* font-size: 80px; */
 }
 .bds_heading_about{
     font-family: 'Kaushan Script', cursive;
-    font-size: 100px;
+    /* font-size: 100px; */
 }

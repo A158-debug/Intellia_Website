@@ -102,10 +102,12 @@ const Events = () => {
                   <div className="basis-1/2">
                     <p className="intellia_heading_about text-6xl">{item.name}</p>
                     <p className="py-3 px-2 footer_license_text text-lg">{item.description}</p>
+                    <p className="border text-xl footer_license_text w-7/12 text-center py-3 rounded cursor-pointer mx-auto">Register</p>
                   </div>
                   <div className="basis-1/2">
                     <img src={item.img} alt="" className="object-cover h-48 w-96" />
                   </div>
+
               </div>
             ))}
       </div>

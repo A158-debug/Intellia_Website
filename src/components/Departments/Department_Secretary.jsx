@@ -1,20 +1,20 @@
 import React from "react";
 
-import Adarsh from '../../img/DepartmentalSecretary/Adarsh.jpg';
-import Anita from '../../img/DepartmentalSecretary/ANITA.jpg';
-import Arpit from '../../img/DepartmentalSecretary/Arpit.jpg';
-import Ayush from '../../img/DepartmentalSecretary/Ayush.jpg';
-import Haifa from '../../img/DepartmentalSecretary/Haifa.jpg';
-import Himanchal from '../../img/DepartmentalSecretary/Himanchal.jpg';
-import Kajal from '../../img/DepartmentalSecretary/Kajal.jpg';
-import Manoj from '../../img/DepartmentalSecretary/Manoj.jpg';
-import Saurabh from '../../img/DepartmentalSecretary/Saurabh_Modi.jpeg';
-import Shivam from '../../img/DepartmentalSecretary/Shivam.jpg';
-import Shreshth from '../../img/DepartmentalSecretary/Shreshth.jpg';
-import Simran from '../../img/DepartmentalSecretary/Simran.jpg';
-import Yashmita from '../../img/DepartmentalSecretary/Yashmita.jpg';
-import Avinash from '../../img/DepartmentalSecretary/Avinash.jpg';
-import Atul from '../../img/DepartmentalSecretary/Atul.png';
+import Adarsh from "../../img/DepartmentalSecretary/Adarsh.jpg";
+import Anita from "../../img/DepartmentalSecretary/ANITA.jpg";
+import Arpit from "../../img/DepartmentalSecretary/Arpit.jpg";
+import Ayush from "../../img/DepartmentalSecretary/Ayush.jpg";
+import Haifa from "../../img/DepartmentalSecretary/Haifa.jpg";
+import Himanchal from "../../img/DepartmentalSecretary/Himanchal.jpg";
+import Kajal from "../../img/DepartmentalSecretary/Kajal.jpg";
+import Manoj from "../../img/DepartmentalSecretary/Manoj.jpg";
+import Saurabh from "../../img/DepartmentalSecretary/Saurabh_Modi.jpeg";
+import Shivam from "../../img/DepartmentalSecretary/Shivam.jpg";
+import Shreshth from "../../img/DepartmentalSecretary/Shreshth.jpg";
+import Simran from "../../img/DepartmentalSecretary/Simran.jpg";
+import Yashmita from "../../img/DepartmentalSecretary/Yashmita.jpg";
+import Avinash from "../../img/DepartmentalSecretary/Avinash.jpg";
+import Atul from "../../img/DepartmentalSecretary/Atul.png";
 
 import {
   AI_Department,
@@ -37,7 +37,7 @@ const departmental_secretary = [
     department_photo: AI_Department,
     department_name: "School of Artificial Intelligence & Data Science Society",
     secretary_name: "Ayush Abrol",
-    secretary_photo:Ayush,
+    secretary_photo: Ayush,
   },
   {
     id: 2,
@@ -139,25 +139,46 @@ const departmental_secretary = [
   },
 ];
 
-const About = () => {
+const Departmnet_Secretary = () => {
   return (
-    <div className="text-white">
-      <p className="text-7xl font-semibold text-center">HEADING</p>
-      <p className="footer_license_text text-lg text-center p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ipsa culpa ea non iure placeat voluptatibus provident soluta asperiores impedit!</p>
-      <div className="text-white">
-        <div className=" grid grid-cols-3 gap-4 mt-10 p-5">
+    <div className="text-white mt-10">
+      <div className="flex flex-col items-center">
+        <p className="text-4xl md:text-7xl font-semibold text-center uppercase w-4/5">
+          Our Department Secretary
+        </p>
+        <p className="footer_license_text text-lg text-center p-3 w-4/5 mt-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ipsa
+          culpa ea non iure placeat voluptatibus provident soluta asperiores
+          impedit!
+        </p>
+      </div>
+
+      <div className="text-white flex flex-col items-center">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 mt-10 p-3 w-4/5 justify-items-center items-center">
           {departmental_secretary.map((card) => (
             <div
               key={card.id}
-              className=" shadow-lg bg-white rounded cursor-pointer"
-            > 
-            <div className="flex overflow-hidden">
-              <img src={card.secretary_photo} alt="" srcset="" className="object-cover w-1/2 h-64" />
-              <img src={card.department_photo} alt="" srcset="" className="object-scale-down bg-black w-1/2 h-64"/>
-            </div>
-            <div className="px-6 py-4 flex self-center  content-center justify-center">
-            <p className="font-semibold text-xl text-center text-cyan-800">{card.department_name}</p>
-            </div>
+              className=" shadow-lg bg-white rounded cursor-pointer p-3 "
+            >
+              <div className="flex flex-col md:flex-row overflow-hidden">
+                <img
+                  src={card.secretary_photo}
+                  alt=""
+                  srcset=""
+                  className="object-cover w-64 h-64"
+                />
+                <img
+                  src={card.department_photo}
+                  alt=""
+                  srcset=""
+                  className="object-cover bg-black w-64 h-64"
+                />
+              </div>
+              <div className="px-4 py-2 flex self-center  content-center justify-center">
+                <p className="font-semibold text-lg text-center text-cyan-800">
+                  {card.department_name}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -166,4 +187,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Departmnet_Secretary;
