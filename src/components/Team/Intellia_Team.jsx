@@ -1,5 +1,4 @@
 import React from "react";
-// import AdityaParkhi from "../../img/Team_Photos/AdityaParkhi.jpg";
 import AshishDev from "../../img/Team_Photos/AshishDev.jpg";
 import DeeptiGupta from "../../img/Team_Photos/DeeptiGupta.jpeg";
 import HarendraPal from "../../img/Team_Photos/HarendraPal.jpg";
@@ -116,7 +115,7 @@ const Intellia_Team_Cards = [
 
 const Intellia_Team = () => {
   return (
-    <div className="text-white">
+    <div className="text-white pt-20">
       {Intellia_Team_Cards?.map((team) => (
         <div key={team.id} className="mb-32">
           <p className="text-5xl font-semibold  text-center uppercase text-emerald-500">

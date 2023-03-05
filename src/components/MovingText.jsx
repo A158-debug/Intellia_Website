@@ -57,7 +57,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    */
   return (
     <div className="parallax">
-      <motion.div className="scroller text-4xl md:text-7xl" style={{ x }}>
+      <motion.div className="scroller text-4xl md:text-6xl" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
@@ -71,8 +71,8 @@ const MovingText = () => {
   return (
     <div>
       <div className="scrolling_text  max-w-full text-white">
-        <ParallaxText baseVelocity={-2}>Framer Motion</ParallaxText>
-        <ParallaxText baseVelocity={2}>Scroll velocity</ParallaxText>
+        <ParallaxText baseVelocity={-2}>15+ ACADEMIC UNITS 8 TEAMS</ParallaxText>
+        <ParallaxText baseVelocity={2}>40+ EVENTS 3 DAYS</ParallaxText>
       </div>
     </div>
   );

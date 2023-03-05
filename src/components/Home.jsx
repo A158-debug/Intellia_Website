@@ -8,30 +8,29 @@ import { BsEmojiSmile } from "react-icons/bs";
 import CountDown from "./CountDown/CountDown";
 import MovingText from "./MovingText";
 
-
 const intellia_info = [
   {
     id: 1,
-    number: 232,
-    heading: "Happy Clients",
+    number: "15+",
+    heading: "Academic Units",
     description: "Lorem ipsum dolor sit amet.",
   },
   {
     id: 2,
-    number: 232,
-    heading: "Happy Clients",
+    number: 8,
+    heading: "Teams",
     description: "Lorem ipsum dolor sit amet.",
   },
   {
     id: 3,
-    number: 232,
-    heading: "Happy Clients",
+    number: "40+",
+    heading: "Competitions",
     description: "Lorem ipsum dolor sit amet.",
   },
   {
     id: 4,
-    number: 232,
-    heading: "Happy Clients",
+    number: 3,
+    heading: "Days",
     description: "Lorem ipsum dolor sit amet.",
   },
 ];
@@ -40,17 +39,17 @@ const about_info = [
   {
     id: 1,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium.",
+      "It would be a general championship between departments consisting of Sports, Cultural and Technical Events.",
   },
   {
     id: 2,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium.",
+      "It includes competitions that involve multiple departments that can promote interdisciplinary collaboration, allowing students and faculty members to build relationships and establish communication.",
   },
   {
     id: 3,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deserunt voluptatum sapiente magni eius. Accusantium.",
+      "It also includes talks and webinars by inviting guests from industry and various departmental sectors, also includes academic events like career talk, research options and some off academic events and informal activities ",
   },
 ];
 
@@ -65,20 +64,20 @@ const Home = () => {
             "radial-gradient(circle, rgba(62,192,182,1) 0%, rgba(15,91,86,1) 100%)",
         }}
       >
-        <div className="flex md:flex-row flex-wrap">
+        <div className="flex md:flex-row flex-wrap ">
           {intellia_info.map((e) => (
-            <div className="md:basis-3/12 basis-1/2 flex">
+            <div className="md:basis-3/12 basis-1/2 flex mt-5 md:mt-0">
               <div className="text-3xl md:text-5xl p-2 pt-5">
                 <BsEmojiSmile />
               </div>
               <div>
-                <h1 className="text-4xl md:text-7xl font-semibold">232</h1>
+                <h1 className="text-4xl md:text-7xl font-semibold">
+                  {e.number}
+                </h1>
                 <p className="text-sm md:text-xl department_heading my-1">
-                  Happy Clients
+                  {e.heading}
                 </p>
-                <p className="footer_license_text">
-                  Lorem ipsum dolor sit amet.
-                </p>
+                <p className="footer_license_text">{e.description}</p>
               </div>
             </div>
           ))}
@@ -98,7 +97,9 @@ const Home = () => {
           <p className="pl-2 text-[110px] md:text-[160px] md:pl-8">M</p>
         </div>
         <div className="basis-12 md:basis-6/12 p-2 md:p-5 text-white text-center mt-20 md:mt-2">
-          <p className="intellia_heading text-9xl md:text-[200px] opacity-20  leading-4">About</p>
+          <p className="intellia_heading text-9xl md:text-[200px] opacity-20  leading-4">
+            About
+          </p>
           <p
             className="intellia_heading_about text-7xl md:text-[100px] "
             style={{
@@ -108,17 +109,19 @@ const Home = () => {
           >
             Intellia
           </p>
-          <p className="footer_license_text text-lg">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            incidunt sit veritatis doloremque rerum porro in. Dolores blanditiis
-            natus quasi eligendi reiciendis voluptatum assumenda, accusantium
-            incidunt temporibus, recusandae dolore delectus? Lorem ipsum dolor
-            sit amet consectetur, adipisicing elit. Adipisci nesciunt quod,
-            exercitationem error quasi natus, a ipsam impedit, ex earum optio.
-            Facilis accusamus ex voluptatibus at velit similique eaque minima.
+          <p className="footer_license_text text-lg mt-10 md:mt-2">
+            Welcome to Intellia , the Inter-departmental General Championship.
+            Holding a range of engaging seminars and activities to highlight
+            IITJ's interdisciplinary atmosphere while honouring the
+            distinctiveness of each department . The connection between students
+            and faculty members is set to change as a result of several
+            sporting, cultural, and technical events, and we all know who would
+            miss the chance to win their professors over. The leaderboard would
+            be kept up to date with the results of each department in various
+            competitions to show who will take home the Intellia'23 trophy.
           </p>
           <div className="flex justify-center content-center mt-10 ">
-            <button className="about_button">Send Message</button>
+            <button className="about_button">Register Now</button>
           </div>
           <div className="mt-10">
             <CountDown deadline="March, 17, 2023" />
@@ -129,9 +132,8 @@ const Home = () => {
       <div className="home_background_image relative">
         <div className="flex flex-col md:flex-row text-white py-10 p-2 md:p-5">
           <div className="basis-6/12 flex justify-center content-center">
-            <p
-              className="text-4xl md:text-7xl font-semibold md:font-bold flex self-center pl-10 leading-[40px] md:leading-[80px]">
-              Lorem ipsum dolor sit amet, consec adipisicing elit{" "}
+            <p className="text-4xl md:text-7xl font-semibold md:font-bold flex self-center pl-10 leading-[40px] md:leading-[80px]">
+              INTER DEPARTMENTAL GENERAL CHAMPIONSHIP
             </p>
           </div>
           <div className="basis-6/12 flex flex-col content-around justify-center">
@@ -142,10 +144,8 @@ const Home = () => {
                     <BsEmojiSmile />
                   </div>
                   <div className="flex self-center">
-                    <p className="footer_license_text text-xl font-semibold">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Suscipit deserunt voluptatum sapiente magni eius.
-                      Accusantium.{" "}
+                    <p className="footer_license_text text-lg md:text-xl">
+                      {e.description}
                     </p>
                   </div>
                 </div>
@@ -155,26 +155,21 @@ const Home = () => {
         </div>
         <MovingText />
       </div>
+      <EventCards />
       <div className="text-white text-center py-10 home_war_background  flex justify-center">
         <div className=" w-full p-3 md:p-0 md:w-4/5  flex flex-col ">
           <h1 className="text-5xl md:text-8xl font-semibold my-3 py-2 pt-10 ">
             GET READY FOR WAR
           </h1>
-          <p className=" mt-10 footer_license_text text-2xl ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint
-            similique amet{" "}
-          </p>
-
-          <p className="my-5 footer_license_text text-xl ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            assumenda amet nobis dolore voluptatem rerum laboriosam numquam fuga
-            reiciendis harum. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Labore, eligendi laborum. Temporibus unde
-            blanditiis dolores maxime, quaerat et saepe quas!
+          <p className="my-5 footer_license_text text-lg md:text-xl ">
+            An overall leaderboard will be maintained throughout the
+            championship keeping track of scores of departments based upon
+            active participation in competitions and events hosted. At last, an
+            overall winner would be announced for the championship.
           </p>
         </div>
       </div>
-      <EventCards />
+
       {/* <DepartmentTeams/> */}
       <Schedule />
       <Contact />

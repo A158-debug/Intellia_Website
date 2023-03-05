@@ -144,13 +144,13 @@ const Departmnet_Secretary = () => {
     <div className="text-white mt-10">
       <div className="flex flex-col items-center">
         <p className="text-4xl md:text-7xl font-semibold text-center uppercase w-4/5">
-          Our Department Secretary
+          Departmental Secretary
         </p>
-        <p className="footer_license_text text-lg text-center p-3 w-4/5 mt-3">
+        {/* <p className="footer_license_text text-lg text-center p-3 w-4/5 mt-3">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ipsa
           culpa ea non iure placeat voluptatibus provident soluta asperiores
           impedit!
-        </p>
+        </p> */}
       </div>
 
       <div className="text-white flex flex-col items-center">

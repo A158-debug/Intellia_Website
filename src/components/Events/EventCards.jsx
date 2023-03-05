@@ -5,16 +5,16 @@ import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const department_logos = [
-  { id: 1, photo: events, name: "Tech" },
-  { id: 2, photo: events, name: "Cult" },
-  { id: 3, photo: events, name: "Sports" },
+  { id: 1, photo: events, name: "Sports" },
+  { id: 2, photo: events, name: "Tech" },
+  { id: 3, photo: events, name: "Cult" },
 ];
 
 const EventCards = () => {
   return (
     <div className="py-10 md:py-20">
       <p className="text-4xl md:text-7xl font-semibold text-white text-center">
-        OUR EVENTS
+        EVENTS
       </p>
 
       <div class="flex flex-row flex-wrap mt-10 justify-center content-center p-3 md:p-0">

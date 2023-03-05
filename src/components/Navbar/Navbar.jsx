@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import favicon from "../../img/favicon.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,18 +13,25 @@ const Navbar = () => {
     <>
       <nav className="app__navbar">
         <div className="flex content-center cursor-pointer">
-          {/* <Image src={header_logo} alt="logo" /> */}
-          <p className="text-2xl self-center ml-2 text-white">Intellia</p>
+          <Link to="./">
+            <img src={favicon} alt="logo" className="w-16" />
+          </Link>
+          <Link to="./" className="self-center">
+            {" "}
+            <p className="text-2xl intellia_heading text-white">
+              Intellia
+            </p>
+          </Link>
         </div>
 
         <ul className="app__navbar-links list-none flex justify-center content-center">
-          {["Home","BDS","Events","Team"].map((item) => (
+          {["Home", "BDS", "Events", "Team"].map((item) => (
             <li
               className="app__flex p-text flex flex-col cursor-pointer mx-4"
               key={`link-${item}`}
             >
               <div />
-              <Link to={`./${item}`} className="" style={{ color: "white" }}>
+              <Link to={`/${item}`} className="" style={{ color: "white" }}>
                 {item}
               </Link>
             </li>
@@ -32,9 +41,9 @@ const Navbar = () => {
             key={`link-contact`}
           >
             <div />
-            <Link to="/#Contact" className="" style={{ color: "white" }}>
+            <HashLink to="/#ContactUs" className="" style={{ color: "white" }}>
               Contact Us
-            </Link>
+            </HashLink>
           </li>
         </ul>
         <div className="app__navbar-menu">
@@ -46,13 +55,22 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>
-                {["Testimonials", "Projects", "About Us"].map((item) => (
+                {["Home", "BDS", "Events", "Team"].map((item) => (
                   <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    <Link to={`./${item}`} onClick={() => setToggle(false)}>
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
+                <li>
+                  <HashLink
+                    to="/#ContactUs"
+                    className=""
+                    onClick={() => setToggle(false)}
+                  >
+                    Contact Us
+                  </HashLink>
+                </li>
               </ul>
             </motion.div>
           )}
