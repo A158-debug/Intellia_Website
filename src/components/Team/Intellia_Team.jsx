@@ -1,6 +1,5 @@
 import React from "react";
 import AshishDev from "../../img/Team_Photos/AshishDev.jpg";
-import DeeptiGupta from "../../img/Team_Photos/DeeptiGupta.jpeg";
 import HarendraPal from "../../img/Team_Photos/HarendraPal.jpg";
 import HimeshDhaka from "../../img/Team_Photos/HimeshDhaka.jpg";
 import Jatin from "../../img/Team_Photos/Jatin.jpg";
@@ -15,13 +14,13 @@ import Niladri from "../../img/Team_Photos/Niladri.jpg";
 import Pragya from "../../img/Team_Photos/Pragya.jpg";
 import RajkumarMina from "../../img/Team_Photos/RajkumarMina.jpg";
 import Ritik from "../../img/Team_Photos/Ritik.jpeg";
-import SamanSiddiqui from "../../img/Team_Photos/SamanSiddiqui.jpg";
 import Sandeep from "../../img/Team_Photos/Sandeep.jpg";
 import SanikaDeshmukh from "../../img/Team_Photos/SanikaDeshmukh.jpg";
 import Simran from "../../img/Team_Photos/Simran.jpg";
 import Soham from "../../img/Team_Photos/Soham.jpg";
 import SrishtiSingh from "../../img/Team_Photos/SrishtiSingh.jpg";
 import Utkarsh from "../../img/Team_Photos/utkarsh.jpg";
+import AdityaParkhi from '../../img/Team_Photos/AdityaParkhi.jpg';
 
 import "./Team.css";
 import { BsInstagram } from 'react-icons/bs';
@@ -65,21 +64,9 @@ const Intellia_Team_Cards = [
       { name: "Sandeep", id: 3, img: Sandeep },
     ],
   },
+
   {
     id: 5,
-    position: "Exhibition",
-    members: [
-      { name: "Deepti Gupta", id: 1, img: DeeptiGupta },
-      { name: "Saman Siddiqui", id: 2, img: SamanSiddiqui },
-    ],
-  },
-  {
-    id: 6,
-    position: "Marketing",
-    members: [{ name: "Niladri Chattopadhya", id: 1, img: Niladri }],
-  },
-  {
-    id: 7,
     position: "Media and Publicity",
     members: [
       { name: "Himesh Dhaka", id: 1, img: HimeshDhaka },
@@ -87,7 +74,7 @@ const Intellia_Team_Cards = [
     ],
   },
   {
-    id: 8,
+    id: 6,
     position: "Design",
     members: [
       { name: "Jesika Rai", id: 1, img: JesikaRai },
@@ -95,21 +82,26 @@ const Intellia_Team_Cards = [
     ],
   },
   {
-    id: 10,
+    id: 7,
     position: "Informal",
     members: [
-      { name: "Ritu", id: 1, img: Niladri },
-      { name: "Harendra Pal", id: 2, img: HarendraPal },
+      // { name: "Ritu", id: 1, img: Niladri },
+      { name: "Harendra Pal", id: 1, img: HarendraPal },
       { name: "Simran Soni", id: 2, img: Simran },
     ],
   },
   {
-    id: 11,
+    id: 8,
     position: "Resources",
     members: [
-      { name: "Vishwanath", id: 1, img: Niladri },
+      { name: "Aditya Parkhi", id: 1, img: AdityaParkhi },
       { name: "Rajkumar Mina", id: 2, img: RajkumarMina },
     ],
+  },
+  {
+    id: 9,
+    position: "Marketing",
+    members: [{ name: "Niladri Chattopadhya", id: 1, img: Niladri }],
   },
 ];
 

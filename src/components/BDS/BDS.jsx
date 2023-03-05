@@ -1,5 +1,5 @@
 import React from "react";
-import Photos from "../../img/Team_Photos/HimeshDhaka.jpg";
+import Mukul from "../../img/Team_Photos/Mukul.jpeg";
 import DepartmnetSecretary from "../Departments/Department_Secretary";
 import "./BDS.css";
 
@@ -81,7 +81,7 @@ const BDS = () => {
           </div>
         </div>
         <div className="md:w-5/12 w-full flex justify-center md:justify-start">
-          <img src={Photos} alt="" srcset="" className="h-80" />
+          <img src={Mukul} alt="" srcset="" className="h-80" />
         </div>
       </div>
       <DepartmnetSecretary />

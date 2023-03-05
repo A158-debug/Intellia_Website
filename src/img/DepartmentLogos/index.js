@@ -10,8 +10,10 @@ import SOLA_Department from './SOLA_Department.jpeg';
 import Mechanical_Department from './Mechanical_Department.png';
 import Sme from './SME.jpeg';
 import Chemical_Society from './Chemical_Society.jpg';
+import ComputerScience from './ComputerScience.png'
+import Electrical_Department from './Electrical_Department.jpeg'
 
-export {AI_Department, BIO_Department ,Chemical_Department, Civil_Department,ES_logo,Material_Department,Mathematics,Physics_Society,SOLA_Department, Mechanical_Department,Sme, Chemical_Society}
+export {AI_Department, BIO_Department ,Chemical_Department, Civil_Department,ES_logo,Material_Department,Mathematics,Physics_Society,SOLA_Department, Mechanical_Department,Sme, Chemical_Society,ComputerScience,Electrical_Department}
 
 
 

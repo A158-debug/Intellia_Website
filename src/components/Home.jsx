@@ -7,6 +7,7 @@ import EventCards from "./Events/EventCards";
 import { BsEmojiSmile } from "react-icons/bs";
 import CountDown from "./CountDown/CountDown";
 import MovingText from "./MovingText";
+import {Link} from 'react-router-dom'
 
 const intellia_info = [
   {
@@ -64,26 +65,27 @@ const Home = () => {
             "radial-gradient(circle, rgba(62,192,182,1) 0%, rgba(15,91,86,1) 100%)",
         }}
       >
-        <div className="flex md:flex-row flex-wrap ">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
           {intellia_info.map((e) => (
-            <div className="md:basis-3/12 basis-1/2 flex mt-5 md:mt-0">
-              <div className="text-3xl md:text-5xl p-2 pt-5">
-                <BsEmojiSmile />
+            <div className="justify-self-center">
+              <div className="flex p-0 md:p-3 mt-5 md:mt-0 justify-center content-center">
+                <div className="text-3xl md:text-5xl p-2 pt-2 md:pt-5">
+                  <BsEmojiSmile />
+                </div>
+                <div className="">
+                  <h1 className="text-4xl md:text-7xl font-semibold">
+                    {e.number}
+                  </h1>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl md:text-7xl font-semibold">
-                  {e.number}
-                </h1>
-                <p className="text-sm md:text-xl department_heading my-1">
-                  {e.heading}
-                </p>
-                <p className="footer_license_text">{e.description}</p>
-              </div>
+              <p className="text-lg md:text-2xl department_heading  text-center">
+                {e.heading}
+              </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row text-white relative mt-20 p-3 md:p-10 py-10 ">
+      <div className="flex flex-col md:flex-row text-white relative md:mt-20 p-3 md:p-10 py-10">
         <div
           className="basis-12 md:basis-6/12 flex flex-col home_wallpaper text-[120px] md:text-[170px] font-semibold leading-[110px] md:leading-[170px]"
           style={{
@@ -109,7 +111,7 @@ const Home = () => {
           >
             Intellia
           </p>
-          <p className="footer_license_text text-lg mt-10 md:mt-2">
+          <p className="footer_license_text text-lg mt-10 md:mt-2 text-left md:text-center">
             Welcome to Intellia , the Inter-departmental General Championship.
             Holding a range of engaging seminars and activities to highlight
             IITJ's interdisciplinary atmosphere while honouring the
@@ -121,14 +123,15 @@ const Home = () => {
             competitions to show who will take home the Intellia'23 trophy.
           </p>
           <div className="flex justify-center content-center mt-10 ">
-            <button className="about_button">Register Now</button>
+            <Link to='/Events' className="about_button">Register Now</Link>
           </div>
           <div className="mt-10">
             <CountDown deadline="March, 17, 2023" />
           </div>
         </div>
       </div>
-      <div className="flex flex-col"></div>
+
+      {/* <div className="flex flex-col"></div> */}
       <div className="home_background_image relative">
         <div className="flex flex-col md:flex-row text-white py-10 p-2 md:p-5">
           <div className="basis-6/12 flex justify-center content-center">
@@ -153,9 +156,10 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <MovingText />
+       
       </div>
       <EventCards />
+      <MovingText />
       <div className="text-white text-center py-10 home_war_background  flex justify-center">
         <div className=" w-full p-3 md:p-0 md:w-4/5  flex flex-col ">
           <h1 className="text-5xl md:text-8xl font-semibold my-3 py-2 pt-10 ">
@@ -169,8 +173,6 @@ const Home = () => {
           </p>
         </div>
       </div>
-
-      {/* <DepartmentTeams/> */}
       <Schedule />
       <Contact />
     </div>

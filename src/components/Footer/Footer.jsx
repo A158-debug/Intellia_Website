@@ -33,9 +33,9 @@ const Footer = () => {
         <div className="mt-12">
         <ul className="flex flex-wrap justify-center content-center footer_links">
           <li><Link to="./">Home</Link></li>
-          <li><Link to="./about">About </Link></li>
-          <li><Link to="./speakers">Speakers</Link></li>
-          <li><Link to="./events">Events</Link></li>
+          <li><Link to="./BDS">BDS</Link></li>
+          <li><Link to="./Events">Events</Link></li>
+          <li><Link to="./Team">Team</Link></li>
           <li><Link to="/#contact">Contacts</Link></li>
         </ul>
         </div>

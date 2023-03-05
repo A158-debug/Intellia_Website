@@ -17,7 +17,6 @@ const Navbar = () => {
             <img src={favicon} alt="logo" className="w-16" />
           </Link>
           <Link to="./" className="self-center">
-            {" "}
             <p className="text-2xl intellia_heading text-white">
               Intellia
             </p>

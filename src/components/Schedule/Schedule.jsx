@@ -1,72 +1,72 @@
 import React from "react";
-import { useState } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+// import { useState } from "react";
+// import {
+//   VerticalTimeline,
+//   VerticalTimelineElement,
+// } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { AiFillClockCircle } from "react-icons/ai";
+// import { AiFillClockCircle } from "react-icons/ai";
 
 const Schedule = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
 
-  const tabs = [
-    { id: 0, title: "Day 1" },
-    { id: 1, title: "Day 2" },
-    { id: 2, title: "Day 3" },
-  ];
+  // const tabs = [
+  //   { id: 0, title: "Day 1" },
+  //   { id: 1, title: "Day 2" },
+  //   { id: 2, title: "Day 3" },
+  // ];
 
-  const schedules = [
-    [
-      {
-        time: "9:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "11:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "2:00 PM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    [
-      {
-        time: "10:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "11:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "2:00 PM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    [
-      {
-        time: "9:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "11:00 AM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        time: "2:00 PM",
-        event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-  ];
+  // const schedules = [
+  //   [
+  //     {
+  //       time: "9:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "11:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "2:00 PM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   [
+  //     {
+  //       time: "10:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "11:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "2:00 PM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   [
+  //     {
+  //       time: "9:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "11:00 AM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       time: "2:00 PM",
+  //       event: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  // ];
 
   return (
     <div className="py-10 text-white">
        <p className="text-4xl md:text-7xl font-semibold text-white text-center">
         EVENT SCHEDULE
       </p>
-      <div className="flex justify-center mb-4 mt-10 md:mt-20">
+      {/* <div className="flex justify-center mb-4 mt-10 md:mt-20">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -106,7 +106,8 @@ const Schedule = () => {
             ))}
           </VerticalTimeline>
         </ul>
-      </div>
+      </div> */}
+      <p className="text-center py-5  text-3xl md:text-5xl mt-5">comming soon...</p> 
     </div>
   );
 };

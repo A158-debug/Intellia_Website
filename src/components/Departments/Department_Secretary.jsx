@@ -28,7 +28,7 @@ import {
   SOLA_Department,
   Mechanical_Department,
   Sme,
-  Chemical_Society,
+  Chemical_Society,ComputerScience,Electrical_Department
 } from "../../img/DepartmentLogos";
 
 const departmental_secretary = [
@@ -118,7 +118,7 @@ const departmental_secretary = [
   },
   {
     id: 13,
-    department_photo: ES_logo,
+    department_photo: Electrical_Department,
     department_name: "Electrical Engineering Society",
     secretary_name: "Saurabh Modi",
     secretary_photo: Saurabh,
@@ -132,7 +132,7 @@ const departmental_secretary = [
   },
   {
     id: 15,
-    department_photo: ES_logo,
+    department_photo: ComputerScience,
     department_name: "Computer Science and Engineering Society",
     secretary_name: "Shresth Vatsal Sharma",
     secretary_photo: Shreshth,
