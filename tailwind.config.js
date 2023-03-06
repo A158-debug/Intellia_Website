@@ -7,6 +7,9 @@ module.exports = {
         'regal-blue': '#243c5a',
       },
     },
+    fontFamily: {
+      heading: ['Bebas Neue', 'cursive']
+    }
   },
   plugins: [],
 }

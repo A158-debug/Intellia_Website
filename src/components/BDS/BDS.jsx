@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Mukul from "../../img/Team_Photos/Mukul.jpeg";
 import DepartmnetSecretary from "../Departments/Department_Secretary";
 import "./BDS.css";
 
 const BDS = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="text-white ">
       <div className="pt-20 px-10">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 // -----------------Cult Events -----------------
 import {
@@ -349,17 +349,21 @@ const total_events = [
   ]
 ];
 
+const tabs = [
+  { id: 0, title: "Sport Events" },
+  { id: 1, title: "Tech Events" },
+  { id: 2, title: "Cult Events" },
+  { id: 3, title: "Exhibition" },
+];
+
 const Events = () => {
   const [activeTab, setActiveTab] = useState(0);
-
-  const tabs = [
-    { id: 0, title: "Sport Events" },
-    { id: 1, title: "Tech Events" },
-    { id: 2, title: "Cult Events" },
-    { id: 3, title: "Exhibition" },
-  ];
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
+    
     <>
       <div className="pt-20">
         <p className="text-4xl md:text-7xl font-semibold text-white text-center">

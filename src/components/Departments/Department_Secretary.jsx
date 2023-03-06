@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import Adarsh from "../../img/DepartmentalSecretary/Adarsh.jpg";
 import Anita from "../../img/DepartmentalSecretary/ANITA.jpg";
@@ -140,6 +140,9 @@ const departmental_secretary = [
 ];
 
 const Departmnet_Secretary = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="text-white mt-10">
       <div className="flex flex-col items-center">
@@ -158,7 +161,8 @@ const Departmnet_Secretary = () => {
           {departmental_secretary.map((card) => (
             <div
               key={card.id}
-              className=" shadow-lg bg-white rounded cursor-pointer p-3 "
+              className=" shadow-lg  rounded cursor-pointer p-3 events_animated_border"
+              style={{ background: "rgba(255, 255, 255, 0.09)" }}
             >
               <div className="flex flex-col md:flex-row overflow-hidden">
                 <img
@@ -175,7 +179,7 @@ const Departmnet_Secretary = () => {
                 />
               </div>
               <div className="px-4 py-2 flex self-center  content-center justify-center">
-                <p className="font-semibold text-lg text-center text-cyan-800">
+                <p className="font-semibold text-lg text-center">
                   {card.department_name}
                 </p>
               </div>

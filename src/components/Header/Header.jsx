@@ -14,23 +14,28 @@ const Header = () => {
 
         {/*------- Home Page Heading --------*/}
         <div className="flex flex-row h-screen ">
-          <div className="basis-7/12 flex justify-center content-center">
-            <div className="content text-white self-center text-center">
-              <p className="text-4xl department_heading">
-                BOARD OF DEPARTMENTAL SOCIETIES
-              </p>
-              <p className="text-xl">IIT JODHPUR</p>
-              <p className="">presents</p>
-              <p
-                className="intellia_heading text-9xl leading md:text-[230px] md:leading-[250px]"
+          <div className="basis-11/12 md:basis-7/12 flex justify-center content-center mx-auto">
+            <div className="text-white flex flex-col justify-center">
+              <div className="flex flex-col self-center items-center">
+                <p className="text-3xl md:text-4xl department_heading text-center">
+                  BOARD OF DEPARTMENTAL SOCIETIES
+                </p>
+                <p className="text-xl">IIT JODHPUR</p>
+                <p className="">Presents</p>
+              </div>
+              <div
+                className="flex intellia_heading justify-center my-5 md:my-0"
                 style={{
                   color: "#fff",
                   textShadow: "0 0 7px ",
                 }}
               >
-                Intellia
-              </p>
-              <p className="text-2xl pl-8 font-semibold">
+                <p className="text-8xl leading md:text-[230px] md:leading-[250px]">
+                  Intellia
+                </p>
+                <p className="flex self-end  text-xl md:text-3xl">23</p>
+              </div>
+              <p className="text-2xl font-semibold text-center">
                 INTER DEPARTMENTAL GENERAL CHAMPIONSHIP
               </p>
             </div>
@@ -45,16 +50,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// eslint-disable-next-line no-lone-blocks
-{
-  /* <div className="mt-10 text-9xl text-white font-semibold" style={{fontFamily: 'Raleway'}}>
-<div className="flex"><p>HOW</p></div>
-<div className="flex relative">
- <p className="absolute left-20 ">THIS</p>  
-</div>
-<div className="flex p-10 relative">
- <p className="absolute left-40 top-28">WORKS</p>  
-</div>
-</div> */
-}

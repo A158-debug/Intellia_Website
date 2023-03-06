@@ -1,11 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AshishDev from "../../img/Team_Photos/AshishDev.jpg";
 import HarendraPal from "../../img/Team_Photos/HarendraPal.jpg";
 import HimeshDhaka from "../../img/Team_Photos/HimeshDhaka.jpg";
 import Jatin from "../../img/Team_Photos/Jatin.jpg";
 import Jaysukh from "../../img/Team_Photos/Jaysukh.jpg";
 import JesikaRai from "../../img/Team_Photos/JesikaRai.jpg";
-import Jyoti from "../../img/Team_Photos/Jyoti.jpg";
+// import Jyoti from "../../img/Team_Photos/Jyoti.jpg";
 import ManojSolara from "../../img/Team_Photos/ManojSolara.jpg";
 import Mohit from "../../img/Team_Photos/Mohit.jpg";
 import NamanGupta from "../../img/Team_Photos/NamanGupta.jpg";
@@ -41,7 +41,7 @@ const Intellia_Team_Cards = [
     members: [
       { name: "Navneed Meena", id: 1, img: NavneetMeena },
       { name: "Sanika Deshmukh", id: 2, img: SanikaDeshmukh },
-      { name: "Ashiesh Dev", id: 3, img: AshishDev },
+      { name: "Ashish Dev", id: 3, img: AshishDev },
       { name: "Jatin", id: 4, img: Jatin },
     ],
   },
@@ -78,7 +78,7 @@ const Intellia_Team_Cards = [
     position: "Design",
     members: [
       { name: "Jesika Rai", id: 1, img: JesikaRai },
-      { name: "Jyoti Bhookar", id: 2, img: Jyoti },
+      // { name: "Jyoti Bhookar", id: 2, img: Jyoti },
     ],
   },
   {
@@ -106,6 +106,9 @@ const Intellia_Team_Cards = [
 ];
 
 const Intellia_Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="text-white pt-20">
       {Intellia_Team_Cards?.map((team) => (

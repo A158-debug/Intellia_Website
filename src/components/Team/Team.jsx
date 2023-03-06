@@ -43,7 +43,7 @@ const Team = () => {
         </p>
         <div class="flex flex-row flex-wrap mt-10 justify-center content-center">
           {department_logos.map((e) => (
-            <div className="bg-white text-teal-700 w-60 m-2 ">
+            <div className="bg-white text-teal-700 w-60 m-2">
               <div className="">
                 <img src={e.photo} alt="" srcset="" className="object-cover w-96 h-56"/>
               </div>

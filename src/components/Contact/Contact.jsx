@@ -1,5 +1,5 @@
 import React from "react";
-import { HiLocationMarker } from "react-icons/hi";
+// import { HiLocationMarker } from "react-icons/hi";
 import "./Contact.css";
 const Contact = () => {
   return (

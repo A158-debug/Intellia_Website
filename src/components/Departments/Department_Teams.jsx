@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import logo from "../../img/DepartmentLogos/logo.png";
 import ES from "../../img/DepartmentLogos/Es_logo.png";
 
@@ -9,6 +9,9 @@ const department_logos = [
   { id: 4, photo: ES, name: "Engineering Science" },
 ];
 const Department_Teams = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
         <div className="text-white">

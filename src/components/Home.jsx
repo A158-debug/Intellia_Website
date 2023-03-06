@@ -1,38 +1,48 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../components/Header/Header";
 // import DepartmentTeams from "../components/Departments/Department_Teams";
 import Contact from "./Contact/Contact";
 import Schedule from "./Schedule/Schedule";
 import EventCards from "./Events/EventCards";
-import { BsEmojiSmile } from "react-icons/bs";
+// import { BsEmojiSmile } from "react-icons/bs";
 import CountDown from "./CountDown/CountDown";
 import MovingText from "./MovingText";
 import {Link} from 'react-router-dom'
+import { AiOutlineClockCircle } from 'react-icons/ai';
+import { TbBuildingWarehouse } from 'react-icons/tb';
+import { RiTeamLine } from 'react-icons/ri';
+import { GiPodiumWinner } from 'react-icons/gi';
+import { MdOutlineSportsTennis,MdOutlineSportsScore } from 'react-icons/md';
+
+
 
 const intellia_info = [
   {
     id: 1,
     number: "15+",
     heading: "Academic Units",
-    description: "Lorem ipsum dolor sit amet.",
+    emoji:<TbBuildingWarehouse/>
   },
   {
     id: 2,
     number: 8,
     heading: "Teams",
-    description: "Lorem ipsum dolor sit amet.",
+    emoji:<RiTeamLine/>
+   
   },
   {
     id: 3,
     number: "40+",
     heading: "Competitions",
-    description: "Lorem ipsum dolor sit amet.",
+    emoji:<GiPodiumWinner/>
+   
   },
   {
     id: 4,
     number: 3,
     heading: "Days",
-    description: "Lorem ipsum dolor sit amet.",
+    emoji:<AiOutlineClockCircle/>
+   
   },
 ];
 
@@ -41,20 +51,26 @@ const about_info = [
     id: 1,
     description:
       "It would be a general championship between departments consisting of Sports, Cultural and Technical Events.",
+      emoji: <MdOutlineSportsTennis/>
   },
   {
     id: 2,
     description:
       "It includes competitions that involve multiple departments that can promote interdisciplinary collaboration, allowing students and faculty members to build relationships and establish communication.",
+      emoji: <GiPodiumWinner/>
   },
   {
     id: 3,
     description:
       "It also includes talks and webinars by inviting guests from industry and various departmental sectors, also includes academic events like career talk, research options and some off academic events and informal activities ",
+      emoji: <MdOutlineSportsScore/>
   },
 ];
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Header />
@@ -70,7 +86,7 @@ const Home = () => {
             <div className="justify-self-center">
               <div className="flex p-0 md:p-3 mt-5 md:mt-0 justify-center content-center">
                 <div className="text-3xl md:text-5xl p-2 pt-2 md:pt-5">
-                  <BsEmojiSmile />
+                 {e.emoji}
                 </div>
                 <div className="">
                   <h1 className="text-4xl md:text-7xl font-semibold">
@@ -135,7 +151,7 @@ const Home = () => {
       <div className="home_background_image relative">
         <div className="flex flex-col md:flex-row text-white py-10 p-2 md:p-5">
           <div className="basis-6/12 flex justify-center content-center">
-            <p className="text-4xl md:text-7xl font-semibold md:font-bold flex self-center pl-10 leading-[40px] md:leading-[80px]">
+            <p className="text-4xl md:text-7xl font-semibold md:font-bold flex self-center pl-10 leading-[40px] md:leading-[80px] ">
               INTER DEPARTMENTAL GENERAL CHAMPIONSHIP
             </p>
           </div>
@@ -144,7 +160,7 @@ const Home = () => {
               <div>
                 <div className="flex justify-center content-center my-10">
                   <div className="text-5xl p-2">
-                    <BsEmojiSmile />
+                    {e.emoji}
                   </div>
                   <div className="flex self-center">
                     <p className="footer_license_text text-lg md:text-xl">
