@@ -349,6 +349,8 @@ const total_events = [
   ]
 ];
 
+// export {total_events} from '../../constants/index'
+
 const tabs = [
   { id: 0, title: "Sport Events" },
   { id: 1, title: "Tech Events" },
