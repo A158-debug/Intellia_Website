@@ -107,7 +107,7 @@ const Schedule = () => {
           </VerticalTimeline>
         </ul>
       </div> */}
-      <p className="text-center py-5  text-3xl md:text-5xl mt-5">comming soon...</p> 
+      <p className="text-center py-5  text-3xl md:text-5xl mt-5">coming soon...</p> 
     </div>
   );
 };

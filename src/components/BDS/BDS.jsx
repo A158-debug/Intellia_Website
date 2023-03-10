@@ -1,12 +1,12 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Mukul from "../../img/Team_Photos/Mukul.jpeg";
 import DepartmnetSecretary from "../Departments/Department_Secretary";
 import "./BDS.css";
 
 const BDS = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="text-white ">
       <div className="pt-20 px-10">
@@ -72,18 +72,25 @@ const BDS = () => {
             <p className="text-2xl p-2 ">Board of Departmental Societies</p>
             <p className="text-xl px-2">Vice President </p>
           </div>
-          <div className="px-2 mt-5 w-full md:w-10/12 text-end float-right">
-            <p className="footer_license_text text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              quidem eum eveniet corrupti quae, quas aspernatur inventore soluta
-              praesentium explicabo doloribus id, libero quis blanditiis
-              aperiam. Voluptate consectetur quae, praesentium deserunt iure
-              similique reprehenderit eius, laborum reiciendis saepe, asperiores
-              unde!
+          <div className="px-2 mt-5 w-full border text-end float-right">
+            <p className="footer_license_text text-xl">
+              I would like to extend a warm welcome to all of the teams
+              participating in this year's championship. As we come together to
+              compete, let us not forget the true spirit of championship. While
+              winning is certainly important, it is equally important to respect
+              our fellow competitors and to show support and encouragement to
+              all teams throughout the championship. I encourage you all to give
+              your best effort and to play fair at all times. Remember, the way
+              we conduct ourselves on the field is a reflection of our character
+              as individuals and as a department.
+            </p>
+            <p className="footer_license_text text-xl">
+              I wish you all the best of luck in the championship, and I look
+              forward to seeing the great performances from all teams
             </p>
           </div>
         </div>
-        <div className="md:w-5/12 w-full flex justify-center md:justify-start">
+        <div className="md:w-5/12 w-full flex justify-center md:justify-start border items-center">
           <img src={Mukul} alt="" srcset="" className="h-80" />
         </div>
       </div>

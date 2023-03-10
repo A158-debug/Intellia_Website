@@ -21,6 +21,7 @@ import Soham from "../../img/Team_Photos/Soham.jpg";
 import SrishtiSingh from "../../img/Team_Photos/SrishtiSingh.jpg";
 import Utkarsh from "../../img/Team_Photos/utkarsh.jpg";
 import AdityaParkhi from '../../img/Team_Photos/AdityaParkhi.jpg';
+import Ankit from '../../img/Team_Photos/Ankit.jpg'
 
 import "./Team.css";
 import { BsInstagram } from 'react-icons/bs';
@@ -49,7 +50,7 @@ const Intellia_Team_Cards = [
     id: 3,
     position: "Cultural Events Head",
     members: [
-      { name: "Ankit Prabhakar", id: 1, img: ManojSolara },
+      { name: "Ankit Prabhakar", id: 1, img: Ankit },
       { name: "Pragya Bauddh", id: 2, img: Pragya },
       { name: "Soham Deshmukh", id: 3, img: Soham },
       { name: "Srishti Singh", id: 3, img: SrishtiSingh },

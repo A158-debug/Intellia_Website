@@ -20,5 +20,6 @@ import Soham from "./Soham.jpg";
 import SrishtiSingh from "./SrishtiSingh.jpg";
 import Utkarsh from "./utkarsh.jpg";
 import AdityaParkhi from './AdityaParkhi.jpg';
+import Ankit from './Ankit.jpg';
 
-export{AshishDev,HarendraPal,HimeshDhaka,Jatin,Jaysukh,ManojSolara,JesikaRai,Mohit,NamanGupta,NavneetMeena,Niladri,Pragya,RajkumarMina,Ritik,Sandeep,SanikaDeshmukh,Simran,Soham,SrishtiSingh,Utkarsh,AdityaParkhi}
+export{Ankit,AshishDev,HarendraPal,HimeshDhaka,Jatin,Jaysukh,ManojSolara,JesikaRai,Mohit,NamanGupta,NavneetMeena,Niladri,Pragya,RajkumarMina,Ritik,Sandeep,SanikaDeshmukh,Simran,Soham,SrishtiSingh,Utkarsh,AdityaParkhi}

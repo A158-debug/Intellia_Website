@@ -13,23 +13,6 @@
   transition: all 0.3s ease;
 }
 
-.register_button{
-  display: block;
-  width: 200px;
-  height: 50px;
-
-  line-height: 40px;
-  /* font-size: 24px; */
-  /* font-family: sans-serif; */
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid rgb(43, 208, 220);
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-  border-radius: 5px;
-}
 
 
 .register_button:after{
