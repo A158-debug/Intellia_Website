@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-
+import {
+  CulturalRulebook,
+  SportsRulebook,
+  TechnicalRulebook,
+} from "../../img/pdfs";
 // -----------------Cult Events -----------------
 import {
   abhivyakti,
   acrylicink,
   bollyflix,
-  dubsmash,
   englishexetempore,
   euphony,
   groupdance,
@@ -106,18 +109,15 @@ const total_events = [
     },
     {
       id: 8,
-      name: "Kho-Kho",
-      description: `"The ultimate game of speed, agility, and strategy - Kho Kho!"
-      `,
+      name: "Kho-Kho (M/W)",
+      description: `"The ultimate game of speed, agility, and strategy - Kho Kho!"`,
       img: KhoKho,
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdEa7-CIil1T9Uu-CDgKPKheMywnyLgYKqj3cz4-YrtQbrhYA/viewform",
     },
     {
       id: 9,
       name: "Table Tennis",
-      description: `"Checkmate, we've got this game!"
-       "Mind over matter the game of chess!"
-       "Mastering strategy, one move at a time!"`,
+      description: `"Smash the competition, own the game."`,
       img: tabletennis,
       link: "https://docs.google.com/forms/d/e/1FAIpQLSf_oAnWBeIEnJQsLg217Yv2oZq4qGtRfbnpHYrAgE6XkEooQQ/viewform",
     },
@@ -192,9 +192,9 @@ const total_events = [
     },
     {
       id: 5,
-      name: "THE B-SCHOOLS BATTLE",
+      name: "THE B-BATTLE",
       description:
-        "The Chase is such a strong format and so simple to follow.The best quiz show formats are the simplest. Be ready to battle in the Blizzard of B-Schools Battle.",
+        "The Chase is such a strong format and so simple to follow.The best quiz show formats are the simplest. Be ready to battle in the Blizzard of B-Battle.",
       img: BSchools,
       link: "https://docs.google.com/forms/d/e/1FAIpQLSc_sfOQwkhM6JbS3QManKjW4_C095eBIPaJhfwgTUzvuS3v3g/viewform",
     },
@@ -352,14 +352,14 @@ const total_events = [
       img: jam,
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdDOdFPcvaliuuw16hssidYsitOokqx0-l89RDqln6oGomx_Q/viewform",
     },
-    {
-      id: 19,
-      name: "DUBSMASH",
-      description:
-        "Your dub is wanted. Bring out your drama, IITJ Janta.After all, you are the centre of your own universe.",
-      img: dubsmash,
-      link: "https://docs.google.com/forms/d/e/1FAIpQLScnZMIHZurQUOghdwCnDV8RooFPo9Bmsj0Oxns2Ux_yr41k8Q/viewform",
-    },
+    // {
+    //   id: 19,
+    //   name: "DUBSMASH",
+    //   description:
+    //     "Your dub is wanted. Bring out your drama, IITJ Janta.After all, you are the centre of your own universe.",
+    //   img: dubsmash,
+    //   link: "https://docs.google.com/forms/d/e/1FAIpQLScnZMIHZurQUOghdwCnDV8RooFPo9Bmsj0Oxns2Ux_yr41k8Q/viewform",
+    // },
     {
       id: 20,
       name: "SHORT MOVIE-MAKING",
@@ -380,13 +380,52 @@ const total_events = [
   ],
 ];
 
-// export {total_events} from '../../constants/index'
+const PdfLinks = [
+  {
+    id: 0,
+    pdflink: SportsRulebook,
+    name: "Sports Rulebook",
+  },
+  {
+    id: 1,
+    pdflink: TechnicalRulebook,
+    name: "Tech Rulebook",
+  },
+  {
+    id: 2,
+    pdflink: CulturalRulebook,
+    name: "Cult Rulebook",
+  },
+];
 
 const tabs = [
-  { id: 0, title: "Sport Events" },
-  { id: 1, title: "Tech Events" },
-  { id: 2, title: "Cult Events" },
-  { id: 3, title: "Exhibition" },
+  {
+    id: 0,
+    title: "Sport Events",
+    pdflink: SportsRulebook,
+    name: "Sports Rulebook",
+  },
+
+  {
+    id: 1,
+    title: "Tech Events",
+    pdflink: TechnicalRulebook,
+    name: "Tech Rulebook",
+  },
+
+  {
+    id: 2,
+    title: "Cult Events",
+    pdflink: CulturalRulebook,
+    name: "Cult Rulebook",
+  },
+
+  {
+    id: 3,
+    title: "Exhibition",
+    pdflink: CulturalRulebook,
+    name: "Exhibition",
+  },
 ];
 
 const Events = () => {
@@ -403,17 +442,34 @@ const Events = () => {
         </p>
         <div className="flex justify-center flex-wrap mb-4 mt-10 md:mt-10">
           {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              className={`w-36 py-2 mt-5 md:mt-0 px-4 mx-3 md:mx-8 rounded-lg text-white hover:bg-teal-700 ${
-                activeTab === tab.id ? "bg-teal-800" : "bg-regal-blue"
-              }`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              <p className="text-lg md:font-semibold">{tab.title}</p>
-            </button>
+            <div className="flex">
+              <button
+                key={tab.id}
+                className={`w-36 py-2 mt-5 md:mt-0 px-4 mx-3 md:mx-8 rounded-lg text-white hover:bg-teal-700 ${
+                  activeTab === tab.id ? "bg-teal-800" : "bg-regal-blue"
+                }`}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                <p className="text-lg md:font-semibold">{tab.title}</p>
+              </button>
+            </div>
           ))}
         </div>
+        <div className="flex justify-center flex-wrap mb-4 mt-10 md:mt-10 ">
+          {PdfLinks.map((activeLink) => (
+            <div className="flex">
+              <a
+                href={activeLink.pdflink}
+                target="_blank"
+                rel="noreferrer"
+                className={`py-3 mt-5 md:mt-0 px-4 mx-3 md:mx-8 rounded-lg text-white hover:bg-teal-700 bg-regal-blue text-lg md:font-semibold`}
+              >
+                {activeLink.name}
+              </a>
+            </div>
+          ))}
+        </div>
+
         <div className="p-4 flex flex-col items-center pb-10">
           {total_events[activeTab].map((item) => (
             <div
@@ -428,23 +484,19 @@ const Events = () => {
                 <p className="p-3 footer_license_text  text-sm md:text-lg ">
                   {item.description}
                 </p>
-               
-                  <div class="my-3 md:my-1 ">
-                   {
-                    item.name !=='DEPARTMENTAL EXHIBITION' && 
-                    (
-                      <a
-                      href={item.link} 
+
+                <div class="my-3 md:my-1 ">
+                  {item.name !== "DEPARTMENTAL EXHIBITION" && (
+                    <a
+                      href={item.link}
                       target="_blank"
                       rel="noreferrer"
                       className=" md:mx-auto text-xl register_button p-1 md:text-[24px]"
                     >
                       <span>Register</span>
                     </a>
-                    )
-                   }
-                  </div>
-                
+                  )}
+                </div>
               </div>
               <div className="basis-full md:basis-1/2">
                 <img src={item.img} alt="" className="object-cover h-64 w-96" />

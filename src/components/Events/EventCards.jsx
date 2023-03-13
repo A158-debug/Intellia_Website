@@ -1,5 +1,4 @@
 import React from "react";
-import "./Events.css";
 import { technocrates, cricket, rangsmash } from "../../img/Events/index";
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
