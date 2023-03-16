@@ -40,7 +40,7 @@ const Intellia_Team_Cards = [
     id: 2,
     position: "Sport Events Head",
     members: [
-      { name: "Navneed Meena", id: 1, img: NavneetMeena },
+      { name: "Navneet Meena", id: 1, img: NavneetMeena },
       { name: "Sanika Deshmukh", id: 2, img: SanikaDeshmukh },
       { name: "Ashish Dev", id: 3, img: AshishDev },
       { name: "Jatin", id: 4, img: Jatin },
@@ -60,7 +60,7 @@ const Intellia_Team_Cards = [
     id: 4,
     position: "Technical Events",
     members: [
-      { name: "Jaysukh MakVana", id: 1, img: Jaysukh },
+      { name: "Jaysukh Makvana", id: 1, img: Jaysukh },
       { name: "Ritik Tiwari", id: 2, img: Ritik },
       { name: "Sandeep", id: 3, img: Sandeep },
     ],

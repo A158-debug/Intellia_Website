@@ -6,7 +6,7 @@ import Jaysukh from "./Jaysukh.jpg";
 import JesikaRai from "./JesikaRai.jpg";
 // import Jyoti from "./Jyoti.jpg";
 import ManojSolara from "./ManojSolara.jpg";
-import Mohit from "./Mohit.jpg";
+import Mohit from "./Mohit.jpeg";
 import NamanGupta from "./NamanGupta.jpg";
 import NavneetMeena from "./NavneetMeena.jpg";
 import Niladri from "./Niladri.jpg";
