@@ -142,7 +142,7 @@ const Home = () => {
             <Link to='/Events' className="about_button">Register Now</Link>
           </div>
           <div className="mt-10">
-            <CountDown deadline="March, 17, 2023" />
+          {/*    <CountDown deadline="March, 17, 2023" />*/}
           </div>
         </div>
       </div>
