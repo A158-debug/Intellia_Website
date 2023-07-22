@@ -1,4 +1,4 @@
-Website for IIT Jodhpure Intra Department Competetion
+Website for IIT Jodhpure Intra Department Competition
 
 Link : https://intellia-website.vercel.app/
 
